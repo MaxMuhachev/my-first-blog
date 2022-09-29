@@ -1,10 +1,14 @@
+body {
+    background-color: #f3fffe;
+}
+
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
 
 .page-header {
-    background-color: #ff9400;
+    background-color: #5fc9b9;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -48,5 +52,18 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #4e8c86;
+}
+
+.post-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 8;
+	-webkit-box-orient: vertical;
+}
+
+.btn-edit {
+    float: right;
+    margin-left: 10px;
 }

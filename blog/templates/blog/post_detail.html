@@ -2,6 +2,10 @@
 
 {% block content %}
     <div class="post">
+        {% if user.is_authenticated %}
+            <a class="btn btn-default btn-edit" href="{% url 'post_edit' pk=post.pk %}"><span
+                    class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
